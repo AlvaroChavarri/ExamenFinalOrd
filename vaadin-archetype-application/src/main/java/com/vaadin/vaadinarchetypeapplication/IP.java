@@ -16,9 +16,9 @@ public class IP {
 
     private String cityname;
 
-    private Double latitude;
+    private String latitude;
 
-    private Double longitud;
+    private String longitud;
 
     private String zipcode;
 
@@ -27,7 +27,7 @@ public class IP {
     protected IP() {
     }
 
-    public IP(String countrycode, String countryname,String regionname,String cityname, Double latitude, Double longitud, String zipcode,String timezone) {
+    public IP(String countrycode, String countryname,String regionname,String cityname, String latitude, String longitud, String zipcode,String timezone) {
         this.countrycode = countrycode;
         this.countryname= countryname;
         this.regionname = regionname;
@@ -78,18 +78,18 @@ public class IP {
         this.regionname = regionname;
     }
 
-    public Double getLatitude() {
+    public String getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(Double latitude) {
+    public void setLatitude(String latitude) {
         this.latitude = latitude;
     }
-    public Double getLongitud() {
+    public String getLongitud() {
         return longitud;
     }
 
-    public void setLongitud(Double longitud) {
+    public void setLongitud(String longitud) {
         this.longitud = longitud;
     }
     public String getZipcode() {
@@ -110,8 +110,8 @@ public class IP {
 
     @Override
     public String toString() {
-        return String.format("IP[id=%d, countrycode='%s', countryname='%s',regionname='%s',cityname='%s',latitude='%f',longitude='%s',zipcode='%s',timezone='%s']", id,
+        return String.format("IP[id=%d, countrycode='%s', countryname='%s',regionname='%s',cityname='%s',latitude='%s',longitude='%s',zipcode='%s',timezone='%s']", id,
                 countrycode, countryname,regionname,cityname,latitude,longitud,zipcode,timezone);
-        
+
     }
 }
