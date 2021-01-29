@@ -1,3 +1,6 @@
 Alvaro Chavarri Lopez de San Roman
 28/11/2000
 Madrid
+Tras hacer un merge entre ramas y eliminar la rama Temporal con git branch -d Temporal
+toda la info que se situaba en esa rama se ha pasado a la rama principal, en este caso la main
+ 
